@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Button analyzeButton;
     private ImageView sentimentIcon;
 
-    private static final String API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDWWB0NUzGjn_zq4MzRunu_H32vduJMcws";  // Secure key
+    private static final String API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + BuildConfig.GOOGLE_API_KEY;  // Secure key
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

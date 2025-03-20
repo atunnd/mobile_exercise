@@ -15,6 +15,8 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
+        buildConfigField("String", "GOOGLE_API_KEY", "\"AIzaSyDWWB0NUzGjn_zq4MzRunu_H32vduJMcws\"")
+
 
     }
 
