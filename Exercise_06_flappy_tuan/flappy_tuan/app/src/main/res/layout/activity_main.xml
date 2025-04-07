@@ -44,4 +44,396 @@
         />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
+    <LinearLayout
+        android:id="@+id/cvLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/cat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="NGUYEN DAI ANH TUAN"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.563"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#000000"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/intern_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Engineer Internship"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/personal_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/intern_position"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="0769174417"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:layout_marginStart='0dp'
+                app:layout_constraintHorizontal_bias="0.1" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="atuan.ngndai@gmail.com"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textColor="#000000"
+
+                app:layout_constraintHorizontal_bias="0.2" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="https://github.com/atunnd"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:layout_marginStart='-3dp'
+                app:layout_constraintHorizontal_bias="0.95" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personal_information">
+
+            <!-- Objective -->
+            <TextView
+                android:id="@+id/header_objective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="8dp"
+                android:text="OBJECTIVE"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/line_separator_obj"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="3dp"
+                android:background="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header_objective" />
+
+            <!-- Education -->
+            <TextView
+                android:id="@+id/objective_content"
+                android:layout_width="358dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:text="A motivated AI engineering student with hands-on experience in computer vision, databases (SQL, NoSQL), and deep learning frameworks such as PyTorch. Proficient in object detection, recognition, and segmentation, as well as in utilizing machine learning libraries like Scikit-learn, Numpy, and Pandas. Seeking an internship to deepen technical expertise, broaden perspectives in AI, and learn from industry experts to solve challenging problems and drive innovation."
+                android:textAlignment="viewStart"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line_separator_obj" />
+
+            <TextView
+                android:id="@+id/header_education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="8dp"
+                android:text="EDUCATION"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/line_separator_education"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="3dp"
+                android:background="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header_education" />
+
+            <TextView
+                android:id="@+id/school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"
+                android:textColor="#000000"
+                android:text="University of Information Technology, Ho Chi Minh National University, Vietnam"
+                android:textAlignment="viewStart"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/gpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"
+                android:text="GPA: 8.9/10"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                app:layout_constraintTop_toBottomOf="@id/school"
+                />
+
+            <!-- Project -->
+            <TextView
+                android:id="@+id/header_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="8dp"
+                android:text="PROJECT"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/line_separator_project"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="3dp"
+                android:background="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header_project" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"
+                android:text="A GAN-based Rain Augmentation for enhancing the accuracy of license plate detection    | Sep 2023 - Jan 2024"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"
+                android:text="Role: First Author"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"
+                android:text="Research contribution:"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="357dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"
+                android:justificationMode="inter_word"
+                android:textColor="#000000"
+                android:text="• Enhance the performance of license plate detector in rain condition with GAN-based method."
+                android:textSize="9sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"
+                android:text="Description:"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Implement object detection model on license plate detection: YOLOv5, Faster RCNN.\n• Research and implement SyRaGAN method on generating license plate images with raindrops.\n• Achieve better results for YOLOv5 for 15.95% and Faster RCNN for 10% on the license plate benchmarking dataset Chinese City Parking Dataset (CCPD) compared to conventional methods."
+                android:textSize="9sp"
+                android:layout_marginLeft="3dp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Citation:"
+                android:textSize="10sp"
+                android:layout_marginLeft="3dp"
+                android:textColor="#000000"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Cita Paper: https://elib.vku.udn.vn/handle/123456789/4042"
+                android:textSize="9sp"
+                android:autoLink="web"
+                android:textColor="#000000"
+                android:layout_marginLeft="3dp"/>
+
+            <!-- Techincal Skills -->
+            <TextView
+                android:id="@+id/header_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="8dp"
+                android:text="TECHNICAL SKILLS"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/line_separator_skills"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="3dp"
+                android:background="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header_skills" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Programming Languages: C++, C#, Python"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Big data: Apache Kafka, Apache Spark"
+                android:textSize="9sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deep learning framework: PyTorch"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Machine learning libraries: Scikit-learn, Numpy, Pandas"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web development: ReactJS, FastAPI"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Database: Oracle, SQL"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/showCvButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show CV"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/closeCvButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close CV"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>
