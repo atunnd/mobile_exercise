@@ -11,6 +11,8 @@ import android.widget.Toast;
 import android.graphics.BitmapFactory;
 import android.graphics.Bitmap;
 import android.graphics.Rect;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,18 +22,36 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView playBtn;
     GameView gameView;
+    Button showCvButton, closeCvButton;
+    LinearLayout cvLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // Màn hình chính
+        setContentView(R.layout.activity_main);
+
+        showCvButton = findViewById(R.id.showCvButton);
+        closeCvButton = findViewById(R.id.closeCvButton);
+        cvLayout = findViewById(R.id.cvLayout);
 
         playBtn = findViewById(R.id.playBtn);
-        gameView = new GameView(this); // khởi tạo GameView
+        gameView = new GameView(this);
 
         playBtn.setOnClickListener(view -> {
             Toast.makeText(MainActivity.this, "Game Start!", Toast.LENGTH_SHORT).show();
-            setContentView(gameView); // chuyển sang GameView
+            setContentView(gameView);
+        });
+
+        showCvButton.setOnClickListener(v -> {
+            cvLayout.setVisibility(View.VISIBLE);
+            showCvButton.setVisibility(View.GONE);
+            closeCvButton.setVisibility(View.VISIBLE);
+        });
+
+        closeCvButton.setOnClickListener(v -> {
+            cvLayout.setVisibility(View.GONE);
+            showCvButton.setVisibility(View.VISIBLE);
+            closeCvButton.setVisibility(View.GONE);
         });
     }
 
